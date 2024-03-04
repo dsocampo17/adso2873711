@@ -39,6 +39,7 @@ main {
             text-align: center;
         }
         img {object-fit: contain;
+            height: 400px;
             width: 100%;
         
         }
