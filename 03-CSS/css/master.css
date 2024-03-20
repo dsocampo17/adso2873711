@@ -75,7 +75,7 @@ main {
         gap: 1rem;
         
         a:is(:link, :visited) {
-            background-color: #0009;
+            background-color: rgba(189, 153, 153, 0.6);
             border-radius: 50px;
             display: flex;
             color: #fffd;
@@ -116,7 +116,7 @@ main {
         width: 400px;
         h3 {
             border-bottom: 2px dotted #0004;
-            color: #0006;
+            color: rgba(230, 136, 136, 0.4);
             font-size: 1.6rem;
             margin: 0;
             width: fit-content;
