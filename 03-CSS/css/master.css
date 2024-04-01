@@ -8,7 +8,7 @@ background-size: cover;
     background-attachment: fixed;
     background-size: cover;
     font-family: poopins, sans-serif;
-    color: black;
+    color: rgb(252, 252, 252);
 }
 
 nav.controls {
@@ -78,7 +78,7 @@ main {
             background-color: rgba(189, 153, 153, 0.6);
             border-radius: 50px;
             display: flex;
-            color: #fffd;
+            color: #000000dd;
             gap: 1rem;
             align-items: center;
             padding: 1rem;
@@ -111,12 +111,12 @@ main {
     section {
         border-radius: 10px;
         background-color: #fff9;
-        color: #0009;
+        color: rgba(248, 248, 248, 0.6);
         padding: 10px;
         width: 400px;
         h3 {
             border-bottom: 2px dotted #0004;
-            color: rgba(230, 136, 136, 0.4);
+            color: rgb(45, 248, 5);
             font-size: 1.6rem;
             margin: 0;
             width: fit-content;
