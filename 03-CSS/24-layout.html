@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/challenge.css">
+    <style>
+        body {
+            background-color: rgb(23, 160, 83);
+            text-align: center;
+        }
+        div.sprite {
+            background: url(images/spriteweb.png) no-repeat;
+            background-position: -10px -400px;
+            margin: 0 auto;
+            height: 180px;
+            width: 190px;
+        }
+        a:is(:link, :visited) {
+            background-color: #3333339c;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.4s ease-in;
+            width: 20%;
+        }
+        a:is(:hover) {
+            background-color: #333;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="sprite"></div>
+    <a href="inicio">INICIO</a>
+    <a href="nosotros">NOSOTROS</a>
+    <a href="portafolio">PORTAFOLIO</a>
+    <a href="servicios">SERVICIOS</a>
+    <a href="contacto">CONTACTO</a>
+</body>
+</html>
