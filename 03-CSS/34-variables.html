@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Fonts</title>
+    <title>Variables</title>
     <Link rel="stylesheet" href="css/master.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Permanent+Marker&display=swap');
-        
-        article h2 {
-            font-family: "Permanent Marker", cursive;
-            font-size: 2.4rem;
+        :root {
+            --bg-box: #0009;
+            --color-txt: #fffa;
+            --fz-h4: 2rem;
+        }
+        article {
+            background-color: var(--bg-box);
+            color: var(--color-txt);
+            padding: 1rem;
+        }
+        article h4 {
+            font-size: var(--fz-h4);
+            text-align: center;
             margin: 0;
         }
-        article p {
-            font-family: "Jersey 10", cursive;
+        section article p {
+            font-size: 1rem;
             text-align: justify;
         }
     </style>
@@ -29,20 +36,14 @@
     </nav>
     <main>
         <header>
-            <h1>Web Fonts</h1>
-            <h2>Use fonts that are not installed on the user's pc</h2>
+            <h1>Variables</h1>
+            <h2>The var() function is used to insert the value of a CSS variable</h2>
         </header>
         <section>
             <article>
                 <h2>Lorem Ipsum Dolor</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Modi error earum mollitia explicabo iusto. Neque, deserunt. 
-                    Earum beatae excepturi delectus consectetur quae dolor, 
-                    provident voluptatem hic quos dignissimos tempore deserunt, 
-                    tenetur unde blanditiis repellat illum. Possimus, 
-                    illo quasi blanditiis consequatur illum quae aut laboriosam! 
-                    Beatae earum eveniet iste laudantium voluptatibus.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa eligendi molestiae, sit in dignissimos quo eos neque, eaque quidem, provident recusandae cupiditate at adipisci sed dolor officia soluta quas mollitia.
                 </p>
             </article>
         </section>
