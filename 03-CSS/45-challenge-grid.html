@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css file</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        section {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap:1rem;
+            grid-template-areas:
+                                "one two three"
+                                "four two five"
+                                "six six seven";
+        }
+        section img {
+            border-radius: 4px;
+            height: 120px;
+            object-fit: cover;
+            width: 120px;
+        }
+        section div.box {
+            border: 2px solid #0008;
+            background-color: #fff9;
+            height: 120px;
+            width: 120px;
+        }
+        section div.box2 {
+            background-color: rgba(150, 108, 69, 0.533);
+            height: 220px;
+            position: 10px;
+        }
+        section div.box4 {
+            background-color: rgba(150, 108, 69, 0.533);
+            width: 220px;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <nav class="controls">
+        <a href="index.html">
+            <svg xmlns "<svg xmlns= "<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>"
+        </a>
+
+    </nav>
+<main>
+    <header>
+        <h1>CSS file</h1>
+        <h2>De esta forma podemos incluir el css de un archivo externo, es muy recomendado cuando se tienen muchas páginas html</h2>
+    </header>
+<section>
+    <div class="box box1">
+        <img src="images/TLOU.jpg" width="120" height="120">
+    </div>
+    <div class="box box2">
+        <img src="images/TLOU2.png" width="120" height="120">
+    </div>
+    <div class="box box3">
+        <img src="images/TLOU3.png" width="120" height="120">
+    </div>
+    <div class="box box4">
+        <img src="images/TLOU4.jpg" width="120" height="120">
+    </div>
+    <div class="box box5">
+        <img src="images/TLOU5.png" width="120" height="120">
+    </div>
+    <div class="box box6">
+        <img src="images/TLOU6.jpg" width="120" height="120">
+    </div>
+    <div class="box box7">
+        <img src="images/TLOU7.jpg" width="120" height="120">
+    </div>
+</section>
+    
+</main> 
+</body>
+</html>
