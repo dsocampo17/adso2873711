@@ -1,34 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap');
 
 body {
-    background-color: #ff7700;
+    background-color: #804000;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23cc0000' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23aa0000' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23d6002b' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23b10022' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23d9004b' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23b2003d' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23d3006c' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23ac0057' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23c4008c' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%239e0071' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23aa00aa' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23880088' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
     background-attachment: fixed;
     background-size: cover;
-    font-family: Poppins, sans-serif;
+    font-family: poopins, sans-serif;
+    color: rgb(0, 0, 0);
+    font-family: Poppins;
+}
+
+nav.controls {
+    position: fixed;
+    a:is(:link, :visited) {
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #0009;
+        height: 40px;
+        transform: scale(0.8);
+        opacity: 0.6;
+        padding: 10px;
+        width: 40px;
+        transition: all 0.4s ease-in;
+
+        
+    }
+
+    a:is(:hover) {
+        opacity: 1;
+        transform: scale(1);
+    }
+    svg {
+        width: 40px;
+    }
+    
 }
 
 main {
     align-items: center;
     display: flex;
+    flex-direction: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
     min-height: 100vh;
 
-    header {
-        h1, h2 {
-            color: #000900;
+    Header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+
+        h1,
+        h2 {
+            color: rgb(0, 0, 0);
             text-align: center;
             margin: 0;
         }
+
         h1 {
             font-size: 4rem;
             font-weight: 400;
         }
+
         h2 {
             font-size: 1.4rem;
             font-weight: 300;
+        }
+        img {
+            border-radius: 50%;
+            background-color: #fff3;
+            width: 160px;
+            border: 10px solid #fff9;
         }
     }
 
@@ -39,10 +85,10 @@ main {
         gap: 1rem;
         
         a:is(:link, :visited) {
-            background-color: #0009;
+            background-color: rgba(194, 179, 179, 0.6);
             border-radius: 50px;
             display: flex;
-            color: #0000ff;
+            color: #000000dd;
             gap: 1rem;
             align-items: center;
             padding: 1rem;
@@ -51,9 +97,9 @@ main {
             width: 280px;
 
             i {
-                background-color: #ff7700;
+                background-color:   #ffaa00;
                 border-radius: 20px;
-                color: wheat;
+                color: #0009;
                 font-style: normal;
                 display: flex;
                 align-items: center;
@@ -62,16 +108,38 @@ main {
                 height: 34px;
                 width: 34px;
             }
+            
         }
-
-        a:is(:hover) {
+        a:is(:hover)  {
             transform: translate(-10px);
-            background-color: greenyellow;
+            background-color: cadetblue;
         }
-        
-        
         a:is(:hover) i {
-            transform: scale(1.2) rotateX(360deg)
+            transform: scale(1.2) rotateX(360deg);
+        }
+    }
+    section {
+        border-radius: 10px;
+        background-color: #fff9;
+        color: rgba(248, 248, 248, 0.6);
+        padding: 10px;
+        width: 400px;
+        h3 {
+            border-bottom: 2px dotted #0004;
+            color: rgb(0, 0, 0);
+            font-size: 1.6rem;
+            margin: 0;
+            width: fit-content;
+        }
+        p {
+            font-size: 1.4rem;
+            margin: 10px 0;
+        }
+        xmp {
+            border-radius: 10px;
+            background-color: #0009;
+            color: #fff9;
+            padding: 0 10px 10px 10px;
         }
     }
 }
