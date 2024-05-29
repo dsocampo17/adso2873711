@@ -75,7 +75,7 @@ main {
 
         a:is(:hover) {
             transform: translate(-10px);
-            background-color: greenyellow;
+            background-color: rgb(143, 197, 61);
         }
         
         
