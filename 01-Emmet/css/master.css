@@ -89,7 +89,7 @@ main {
 
         a:is(:hover) {
             transform: translate(-10px);
-            background-color: rgb(173, 253, 45);
+            background-color: rgb(151, 197, 189);
         }
         
         
