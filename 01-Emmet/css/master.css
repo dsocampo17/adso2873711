@@ -65,7 +65,7 @@ main {
                 background-color: #0009;
                 border-radius: 50px;
                 display: flex;
-                color: blue;
+                color: rgb(0, 255, 170);
                 gap: 1rem;
                 align-items: center;
                 padding: 1rem;
