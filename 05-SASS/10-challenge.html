@@ -1,40 +1,27 @@
 <head>
     <link rel="stylesheet" href="css/10-challenge.css">
 </head>
-<nav class="navbar">
-    <div class="logotype">[Menu Burguer]</div>
-    <input type="checkbox" id="check" class="checkbox" hidden>
-    <div class="hamburger-menu">
-        <label for="check" class="menu">
-            <div class="menu-line menu-line-1"></div>
-            <div class="menu-line menu-line-2"></div>
-            <div class="menu-line menu-line-3"></div>
-        </label>
-    </div>
-    <div class="navbar-navigation">
-        <div class="navbar-navigation-left">
-            <ul class="nav-list">
-                <li class="nav-list-item">
-                    <a href="#" class="nav-list-link">Home</a>
-                </li>
-                <li class="nav-list-item">
-                    <a href="#" class="nav-list-link">About us</a>
-                </li>
-                <li class="nav-list-item">
-                    <a href="#" class="nav-list-link">Briefcase</a>
-                </li>
-                <li class="nav-list-item">
-                    <a href="#" class="nav-list-link">services</a>
-                </li>
-                <li class="nav-list-item">
-                    <a href="#" class="nav-list-link">Contact us</a>
-                </li>
-            </ul>
-        </div>
-        <div class="navbar-navigation-right">
-            <img src="imagen/Stranger_Things_logo.png" alt="" class="left-img left-img-1">
-            <img src="imagen/64CXIYJ2XVATTFGHMXTYX7EEZM.jpg" alt="" class="left-img left-img-2">
-            <img src="imagen/stranger-things-4-2952536.jpg" alt="" class="left-img left-img-3">
-        </div>
-    </div>
-</nav>
+
+
+<div class="nav__bar">
+    <input type="checkbox" id="toggle" aria-hidden="true" />
+    <label for="toggle" class="nav__icon" aria-hidden="true">
+      Expand the menu
+      <span class="nav__icon-line"></span>
+      <span class="nav__icon-line"></span>
+      <span class="nav__icon-line"></span>
+    </label>
+    <nav role="navigation" class="nav">
+        <h1>Hamburger Menu</h1>
+      <ul class="nav__items">
+        <li class="nav__item"><a href="#">Home</a></li>
+        <li class="nav__item"><a href="#">About</a></li>
+        <li class="nav__item"><a href="#">Briefcase</a></li>
+        <li class="nav__item"><a href="#">Services</a></li>
+        <li class="nav__item"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique at quo laboriosam pariatur distinctio vitae ex magnam reprehenderit molestiae praesentium.
+  </p>
