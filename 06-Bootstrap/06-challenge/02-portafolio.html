@@ -11,11 +11,12 @@
             background: linear-gradient(50deg, #f8f9fa 50%, #0d6efd 50%);
         }
         .avatar {
-            max-width: 300px;
+            max-width: 250px; /* Establece el ancho máximo de la imagen */
+            float: right; /* Alinea la imagen a la izquierda */
+            margin-right: 15px; /* Añade espacio a la derecha de la imagen, opcional */
         }
         .service-card {
             border: 1px solid #0d6efd;
-
             border-radius: 10px;
             padding: 20px;
             margin-bottom: 20px;
@@ -35,6 +36,16 @@
             object-fit: cover 100px; /* Ajusta la imagen para que cubra todo el contenedor */
             display: block; /* Elimina el espacio extra debajo de la imagen */
         }
+        .navbar {
+            position: fixed; /* Mantiene la barra fija en la parte superior */
+            top: 0; /* Alinea la barra con el borde superior del viewport */
+            left: 0; /* Alinea la barra con el borde izquierdo del viewport */
+            width: 100%; /* Asegura que la barra ocupe todo el ancho del viewport */
+            z-index: 1000; /* Asegura que la barra se mantenga encima de otros elementos */
+        }
+        body {
+            padding-top: 56px; /* Ajusta el valor según la altura de tu barra de navegación */
+        }
     </style>
 </head>
 <body>
@@ -49,7 +60,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#Services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#Portfolio">Portfolio</a></li>
