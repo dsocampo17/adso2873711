@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-image: url('../07-Tailwind/images/window-the-last-of-us-thumb.jpg'); /* Asegúrate de que la ruta de la imagen es correcta */
+            background-size: cover; /* Usa 'cover' para cubrir todo el fondo, o 'contain' si prefieres ajustar la imagen sin distorsión */
+            background-position: right bottom; /* Alinea la imagen en la esquina inferior izquierda */
+            background-repeat: no-repeat; /* Opcional: evita que la imagen se repita si es más pequeña que el contenedor */
+        }
+    </style>
+</head>
+
+<body class="p-8 flex justify-center items-center min-h-screen">
+
+    <div class="flex flex-col items-center space-y-4 w-full max-w-4xl rounded-xl p-6 shadow-lg">
+
+        <!-- Primera sección -->
+        <section id="section1" class="bg-gray-500 rounded-xl p-6 w-full max-w-md">
+            <div class="w-full h-72 rounded-lg mb-4 flex justify-center items-center">
+                <img src="..//07-Tailwind/images/275340.jpg" alt="Paris 2024 Logo" class="max-h-full max-w-full object-cover">
+            </div>
+            <h2 class="text-2xl font-bold mb-2 uppercase text-black-500 mt-4">HISTORIA</h2>
+            <p class="text-sm mb-4 mt-4">The Last of Us Part I es un juego de acción y aventuras de 2022 
+                desarrollado por Naughty Dog y publicado por Sony Interactive Entertainment. 
+                Es una nueva versión del juego The Last of Us de 2013 y presenta una jugabilidad revisada, 
+                que incluye combate y exploración mejorados y opciones de accesibilidad ampliadas.</p>
+            <div class="text-center mt-4">
+                <button onclick="showSection('section2')" class="bg-black text-white py-2 px-6 rounded-full text-base">Go</button>
+            </div>
+        </section>
+
+        <!-- Segunda sección -->
+        <section id="section2" class="bg-gray-500 rounded-xl p-6 w-full max-w-md hidden">
+            <div class="flex items-center mb-4">
+                <button onclick="showSection('section1')" class="mr-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                </button>
+                <h2 class="text-2xl font-bold text-black-500">SINOPSIS</h2>
+            </div>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center mr-3"></div>
+                    <div>
+                        <p class="font-semibold"></p>
+                    </div>
+                </div>
+                <div class="w-full h-48 bg-slate-600 rounded-lg mb-4">
+                    <img src="..//07-Tailwind/images/the-last-of-us-1583485116.jpg" alt="imagen" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="flex items-center">
+                    <div>
+                        <p class="font-semibold">La serie se desarrolla en un Estados Unidos postapocalíptico devastados por humanos caníbales infectados por un hongo mutado del género Cordyceps. 
+                            Sigue a varios sobrevivientes, entre ellos Joel , un contrabandista que perdió a su hija durante el brote; Ellie , una joven que es inmune a la infección; y Abby , 
+                            una soldado que se involucra en un conflicto entre su milicia y un culto religioso. Los juegos utilizan una perspectiva en tercera persona en la que el jugador 
+                            lucha contra humanos hostiles y criaturas caníbales con armas de fuego, armas improvisadas y sigilo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <button onclick="showSection('section3')" class="bg-black text-white py-2 px-6 rounded-full">Next</button>
+            </div>
+        </section>
+
+        <!-- Tercera sección -->
+        <section id="section3" class="bg-gray-500 rounded-xl p-6 w-full max-w-md hidden">
+            <div class="flex items-center mb-4">
+                <button onclick="showSection('section2')" class="mr-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                </button>
+                <h2 class="text-2xl font-bold text-black-500">SECUELAS</h2>
+            </div>
+            <div class="bg-gray-500 text-white p-6 rounded-lg mb-4 h-72">
+                <img src="..//07-Tailwind/images/Efh109.jpg" alt="imagen" class="w-full h-full object-contain rounded-lg">
+            </div>
+            <p class="font-semibold">The Last of Us Part II es un juego de acción y aventuras de 2020 desarrollado por Naughty Dog y publicado por Sony Interactive Entertainment.
+                Ambientado cuatro años después de The Last of Us (2013), el juego se centra en dos personajes jugables en uno Estados Unidos postapocalíptico cuyas vidas se entrelazan: 
+                Ellie, que se propone vengar un asesinato, y Abby, una soldado que se ve envuelta en un conflicto entre su milicia y un culto religioso. El juego utiliza una perspectiva en tercera persona; 
+                el jugador debe luchar contra enemigos humanos y criaturas parecidas a zombis con armas de fuego, armas improvisadas y sigilo.</p>
+            <div class="text-center mt-4">
+                <button onclick="showSection('section1')" class="bg-black text-white py-2 px-6 rounded-full w-full">Lets start</button>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            document.getElementById('section1').classList.add('hidden');
+            document.getElementById('section2').classList.add('hidden');
+            document.getElementById('section3').classList.add('hidden');
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
